@@ -3,16 +3,16 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 330px;
-  height: 490px;
+  height: 470px;
   background-color: #171721;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  padding: 26px 20px;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 1rem;
   transition: all 0.5s ease-in-out;
   &:hover {
     transform: translateY(-10px);
@@ -64,7 +64,7 @@ const Title = styled.div`
 //   }
 // `;
 const Description = styled.div`
-  font-weight: 400;
+  font-weight: 300;
   color: #b1b2b3 + 99;
   overflow: hidden;
   margin-top: 8px;
@@ -73,6 +73,7 @@ const Description = styled.div`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  font-size: 0.9rem;
 `;
 // const Members = styled.div`
 //   display: flex;
@@ -101,11 +102,25 @@ const ProjectCard = ({ project }) => {
       <Image src={project.image} />
       <Tags></Tags>
       <Details>
-        <Title>{project.title}</Title>
+        <Title style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}>
+          {project.title}
+        </Title>
         {/* <Date>{project.date}</Date> */}
-        <Description>{project.description}</Description>
+        <Description
+          style={{
+            lineHeight: "1.5",
+            letterSpacing: "0.03rem",
+            textAlign: "justify",
+          }}
+        >
+          {project.description}
+        </Description>
       </Details>
-      <Button href={project.github} target="_blank">
+      <Button
+        href={project.github}
+        target="_blank"
+        style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}
+      >
         View Code
       </Button>
     </Card>

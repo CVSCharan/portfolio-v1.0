@@ -12,6 +12,7 @@ const Image = styled.img`
   height: 50px;
   border-radius: 10px;
   margin-top: 4px;
+  background: white;
   @media only screen and (max-width: 768px) {
     height: 40px;
   }
@@ -49,8 +50,9 @@ const Date = styled.div`
 
 const Description = styled.div`
   width: 100%;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: justify;
   color: #f2f3f4 + 99;
   margin-bottom: 10px;
   @media only screen and (max-width: 768px) {
@@ -91,7 +93,11 @@ const ExperienceCard = ({ experience }) => {
           width="100%"
           height="100%"
           alt={experience?.company}
-          style={{ borderRadius: "50%", objectFit: "cover" }}
+          style={{
+            borderRadius: "50%",
+            objectFit: "cover",
+            background: "white",
+          }}
           src={experience?.img}
         />
       }

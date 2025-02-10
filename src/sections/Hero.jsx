@@ -40,7 +40,16 @@ const Hero = () => {
             </motion.div>
 
             <motion.div {...headContentAnimation}>
-              <div className="sub-title">{Bio.description}</div>
+              <div
+                className="sub-title"
+                style={{
+                  fontWeight: "300",
+                  textAlign: "justify",
+                  maxWidth: "600px",
+                }}
+              >
+                {Bio.description}
+              </div>
             </motion.div>
 
             <div className="resume-btn" href={Bio.resume} target="_blank">

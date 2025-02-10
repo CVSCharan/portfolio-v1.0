@@ -57,7 +57,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="footer-copyright">
-            &copy; 2024 CVS CHARAN. All rights reserved.
+            {`© 2022 - 2025 CVS CHARAN. All rights reserved.`}
           </p>
         </div>
       </div>
