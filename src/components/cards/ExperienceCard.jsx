@@ -114,12 +114,24 @@ const ExperienceCard = ({ experience }) => {
       <Top>
         <Image src={experience?.img} />
         <Body>
-          <Role>{experience?.role}</Role>
-          <Company>{experience?.company}</Company>
-          <Date>{experience?.date}</Date>
+          <Role style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}>
+            {experience?.role}
+          </Role>
+          <Company style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}>
+            {experience?.company}
+          </Company>
+          <Date style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}>
+            {experience?.date}
+          </Date>
         </Body>
       </Top>
-      <Description>
+      <Description
+        style={{
+          lineHeight: "1.5",
+          letterSpacing: "0.03rem",
+          fontWeight: "300",
+        }}
+      >
         {experience?.desc && <Span>{experience.desc}</Span>}
         {experience?.skills && (
           <>

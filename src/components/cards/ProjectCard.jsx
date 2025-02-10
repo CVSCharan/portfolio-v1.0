@@ -54,15 +54,15 @@ const Title = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
 `;
-const Date = styled.div`
-  font-size: 12px;
-  margin-left: 2px;
-  font-weight: 400;
-  color: #b1b2b3 + 80;
-  @media only screen and (max-width: 768px) {
-    font-size: 10px;
-  }
-`;
+// const Date = styled.div`
+//   font-size: 12px;
+//   margin-left: 2px;
+//   font-weight: 400;
+//   color: #b1b2b3 + 80;
+//   @media only screen and (max-width: 768px) {
+//     font-size: 10px;
+//   }
+// `;
 const Description = styled.div`
   font-weight: 400;
   color: #b1b2b3 + 99;
@@ -74,20 +74,20 @@ const Description = styled.div`
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 `;
-const Members = styled.div`
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-`;
-const Avatar = styled.img`
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  margin-left: -10px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border: 3px solid #171721;
-`;
+// const Members = styled.div`
+//   display: flex;
+//   align-items: center;
+//   padding-left: 10px;
+// `;
+// const Avatar = styled.img`
+//   width: 38px;
+//   height: 38px;
+//   border-radius: 50%;
+//   margin-left: -10px;
+//   background-color: #ffffff;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+//   border: 3px solid #171721;
+// `;
 const Button = styled.a`
   color: #854ce6;
   text-decoration: none;
@@ -102,14 +102,9 @@ const ProjectCard = ({ project }) => {
       <Tags></Tags>
       <Details>
         <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
+        {/* <Date>{project.date}</Date> */}
         <Description>{project.description}</Description>
       </Details>
-      <Members>
-        {project.member?.map((member, index) => (
-          <Avatar key={index} src={member.img} />
-        ))}
-      </Members>
       <Button href={project.github} target="_blank">
         View Code
       </Button>

@@ -27,18 +27,18 @@
 }
 
 .experience-title {
-  font-size: 52px;
+  font-size: 2.5rem;
   text-align: center;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 2rem;
   color: #f2f3f4;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
   .experience-title {
-    margin-top: 12px;
-    font-size: 32px;
+    margin-top: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -47,10 +47,13 @@
   text-align: center;
   font-weight: 600;
   color: #b1b2b3;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  max-width: 750px;
 }
 
 @media (max-width: 768px) {
   .experience-desc {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }

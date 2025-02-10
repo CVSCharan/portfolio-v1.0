@@ -102,16 +102,28 @@ const EducationCard = ({ education }) => {
       <Top>
         <Image src={education?.img} />
         <Body>
-          <School>{education?.school}</School>
-          <Degree>{education?.degree}</Degree>
-          <Date>{education?.date}</Date>
+          <School style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}>
+            {education?.school}
+          </School>
+          <Degree style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}>
+            {education?.degree}
+          </Degree>
+          <Date style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}>
+            {education?.date}
+          </Date>
         </Body>
       </Top>
-      <Grade>
+      <Grade style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}>
         <b>Grade : </b>
         {education?.grade}
       </Grade>
-      <Description>
+      <Description
+        style={{
+          lineHeight: "1.5",
+          letterSpacing: "0.03rem",
+          fontWeight: "300",
+        }}
+      >
         {education?.desc && <Span>{education.desc}</Span>}
       </Description>
     </VerticalTimelineElement>

@@ -286,7 +286,7 @@ export const education = [
     date: "Aug 2019 - Jun 2021",
     grade: "7.2 CGPA",
     desc: "VIT provides ample opportunities and resources to enhance the learning. I focused on high-entropy alloys for dental and bone implants and completed a comprehensive review paper as my master's thesis project.",
-    degree: "ISC(XII), Science with Computer",
+    degree: "Master(s) - Physics",
   },
 ];
 
