@@ -50,7 +50,7 @@ const Date = styled.div`
 
 const Description = styled.div`
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 300;
   text-align: justify;
   color: #f2f3f4 + 99;

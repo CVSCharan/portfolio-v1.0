@@ -122,6 +122,7 @@ const EducationCard = ({ education }) => {
           lineHeight: "1.5",
           letterSpacing: "0.03rem",
           fontWeight: "300",
+          fontSize: "0.8rem",
         }}
       >
         {education?.desc && <Span>{education.desc}</Span>}
