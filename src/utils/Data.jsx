@@ -14,6 +14,9 @@ export const Bio = {
   twitter: "https://twitter.com/",
   insta: "https://www.instagram.com/",
   facebook: "https://www.facebook.com/",
+  whatsApp: "https://wa.me/917337525111",
+  phone: "tel:+91 7337525111",
+  email: "mailto:charan.cvs@gmail.com",
 };
 
 export const skills = [

@@ -1,8 +1,8 @@
 import {
-  FacebookRounded,
-  Instagram,
+  PhoneAndroidOutlined,
+  EmailOutlined,
   LinkedIn,
-  Twitter,
+  WhatsApp,
 } from "@mui/icons-material";
 import { Bio } from "../utils/Data";
 import "../styles/Footer.css";
@@ -31,19 +31,18 @@ const Footer = () => {
             </a>
           </div>
           <div style={{ marginTop: "10px" }} className="socialmedia-icons">
-            <a
-              className="social-media-icon"
-              href={Bio.facebook}
-              target="display"
-            >
-              <FacebookRounded />
+            <a className="social-media-icon" href={Bio.phone} target="display">
+              <PhoneAndroidOutlined />
             </a>
             <a
               className="social-media-icon"
-              href={Bio.twitter}
-              target="display"
+              href={Bio.whatsApp}
+              target="_blank"
             >
-              <Twitter />
+              <WhatsApp />
+            </a>
+            <a className="social-media-icon" href={Bio.email} target="display">
+              <EmailOutlined />
             </a>
             <a
               className="social-media-icon"
@@ -51,9 +50,6 @@ const Footer = () => {
               target="display"
             >
               <LinkedIn />
-            </a>
-            <a className="social-media-icon" href={Bio.insta} target="display">
-              <Instagram />
             </a>
           </div>
           <p className="footer-copyright">
