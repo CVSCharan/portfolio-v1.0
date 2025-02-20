@@ -52,9 +52,9 @@ const Hero = () => {
               </div>
             </motion.div>
 
-            <div className="resume-btn" href={Bio.resume} target="_blank">
+            <a className="resume-btn" href={Bio.resume} target="_blank">
               Check Resume
-            </div>
+            </a>
           </div>
           <div className="hero-right-container">
             <motion.div {...headContentAnimation}>
