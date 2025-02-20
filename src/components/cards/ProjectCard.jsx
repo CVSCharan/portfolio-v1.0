@@ -123,6 +123,15 @@ const ProjectCard = ({ project }) => {
       >
         View Code
       </Button>
+      {project.webapp && (
+        <Button
+          href={project.webapp}
+          target="_blank"
+          style={{ lineHeight: "1.7", letterSpacing: "0.03rem" }}
+        >
+          Website Link
+        </Button>
+      )}
     </Card>
   );
 };

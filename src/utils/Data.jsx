@@ -500,7 +500,7 @@ export const projects = [
     tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
     category: "android app",
     github: "https://github.com/CVSCharan/SwamysHotFoods_React_Native",
-    webapp: "https://rishav-react-todo.netlify.app/",
+    webapp: "",
   },
   {
     id: 6,
@@ -513,7 +513,7 @@ export const projects = [
     tags: ["React Js", "API", "Axios", "Node JS"],
     category: "android app",
     github: "https://github.com/CVSCharan/",
-    webapp: "https://breaking-bad-webapp.netlify.app",
+    webapp: "",
   },
   // {
   //   id: 7,

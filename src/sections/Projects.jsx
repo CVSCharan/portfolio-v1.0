@@ -54,13 +54,13 @@ const Projects = () => {
           >
             {`ANDROID APP'S`}
           </ToggleButton>
-          <div className="divider" />
-          <ToggleButton
+          {/* <div className="divider" /> */}
+          {/* <ToggleButton
             active={toggle === "machine learning"}
             onClick={() => setToggle("machine learning")}
           >
             MACHINE LEARNING
-          </ToggleButton>
+          </ToggleButton> */}
         </div>
 
         <div className="projects-card-container">
