@@ -6,8 +6,8 @@ import "../styles/Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    email: "",
-    name: "",
+    from_email: "",
+    from_name: "",
     subject: "",
     message: "",
   });
@@ -27,7 +27,7 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handelSubmit = (e) => {
+  const handelSubmit = async (e) => {
     e.preventDefault();
 
     // Ensure environment variables are defined, otherwise throw an error
@@ -45,13 +45,13 @@ const Contact = () => {
       return;
     }
 
-    emailjs
+    await emailjs
       .send(
         service_id, // Service ID
         template_id, // Template ID
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          from_name: formData.from_name,
+          from_email: formData.from_email,
           subject: formData.subject,
           message: formData.message,
         },
@@ -65,8 +65,8 @@ const Contact = () => {
             severity: "success",
           });
           setFormData({
-            email: "",
-            name: "",
+            from_email: "",
+            from_name: "",
             subject: "",
             message: "",
           });
@@ -80,8 +80,8 @@ const Contact = () => {
             severity: "error",
           });
           setFormData({
-            email: "",
-            name: "",
+            from_email: "",
+            from_name: "",
             subject: "",
             message: "",
           });
@@ -103,6 +103,7 @@ const Contact = () => {
               className="contact-input"
               placeholder="Your Email"
               name="from_email"
+              value={formData.from_email}
               onChange={handleChange}
               required
             />
@@ -110,6 +111,7 @@ const Contact = () => {
               className="contact-input"
               placeholder="Your Name"
               name="from_name"
+              value={formData.from_name}
               onChange={handleChange}
               required
             />
@@ -118,6 +120,7 @@ const Contact = () => {
               placeholder="Subject"
               name="subject"
               onChange={handleChange}
+              value={formData.subject}
               required
             />
             <textarea
@@ -125,30 +128,30 @@ const Contact = () => {
               placeholder="Message"
               name="message"
               rows={4}
+              value={formData.message}
               onChange={handleChange}
               required
             />
             <input className="contact-btn" type="submit" value="Send" />
           </form>
         </div>
+        {/* Snackbar should be positioned below the form */}
+        <div className="snackbar-container">
+          <Snackbar
+            open={snackbar.open}
+            autoHideDuration={4000}
+            onClose={handleSnackbarClose}
+          >
+            <Alert
+              onClose={handleSnackbarClose}
+              severity={snackbar.severity}
+              sx={{ width: "100%" }}
+            >
+              {snackbar.message}
+            </Alert>
+          </Snackbar>
+        </div>
       </div>
-
-      {/* Snackbar for Notifications */}
-      <Snackbar
-        open={snackbar.open}
-        autoHideDuration={4000}
-        onClose={handleSnackbarClose}
-        style={{ zIndex: "1000000" }}
-        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-      >
-        <Alert
-          onClose={handleSnackbarClose}
-          severity={snackbar.severity}
-          sx={{ width: "100%" }}
-        >
-          {snackbar.message}
-        </Alert>
-      </Snackbar>
     </section>
   );
 };

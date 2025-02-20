@@ -122,3 +122,13 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.snackbar-container {
+  position: absolute;
+  bottom: -100px; /* Adjust as needed */
+  left: 85%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
