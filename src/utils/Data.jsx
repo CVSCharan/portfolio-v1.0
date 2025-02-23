@@ -374,7 +374,7 @@ export const projects = [
   {
     id: 11,
     title: "Swamy's Hot Foods",
-    date: "Jan 2024 - Dec 2023",
+    date: "",
     description:
       "Swamy’s Hot Foods – A custom-built restaurant web application offering a seamless digital menu experience. Developed with React.js, Node.js, Express.js, and MongoDB, it features real-time shop status updates, a notice board, Google reviews, and an intuitive mobile-friendly UI. Additionally, a React Native mobile app empowers the restaurant owner to manage the menu and shop status effortlessly.",
     image:
@@ -395,7 +395,7 @@ export const projects = [
   {
     id: 9,
     title: "Technotran Solutions",
-    date: "Jun 2023 - Jul 2023",
+    date: "",
     description:
       "Technotran – A modern and responsive website designed for Technotran, showcasing its services and expertise in technology and training solutions. Built with Next.js for optimized performance and SEO, the site ensures a seamless user experience with a clean, professional UI.",
     image:
@@ -408,7 +408,7 @@ export const projects = [
   {
     id: 0,
     title: "E - Verify Portal",
-    date: "Apr 2023 - May 2023",
+    date: "",
     description:
       "E-Verify Portal – A secure and efficient platform for verifying and managing student certificates for internships, workshops, and courses. Built with Next.js and Node.js, it enables students to log in, verify, share, and download their certificates, while MoU clients can authenticate credentials seamlessly.",
     image:
@@ -428,7 +428,7 @@ export const projects = [
   {
     id: 1,
     title: "DSN Events",
-    date: "Oct 2022 - Jan 2023",
+    date: "",
     description:
       "DSN Events Website – A dynamic event management platform showcasing premium event planning services. Built with Next.js and React.js, it highlights event portfolios, client testimonials, and seamless booking options, ensuring a smooth and engaging user experience.",
     image:
@@ -441,7 +441,7 @@ export const projects = [
   {
     id: 2,
     title: "RoboMonk AI",
-    date: "Jan 2023 - Mar 2023",
+    date: "",
     description:
       "RoboMonk AI – A cutting-edge e-learning platform focused on Robotics, AI, and STEM education. Built with Next.js and React.js, it offers an interactive experience with courses, educator insights, and student showcases, empowering learners with hands-on innovation.",
     image:
@@ -454,7 +454,7 @@ export const projects = [
   {
     id: 3,
     title: "Restaurant App",
-    date: "Dec 2021 - Apr 2022",
+    date: "",
     description:
       "Restaurant Website – A sleek and responsive static website for a restaurant, designed with Next.js and React.js. Showcases the menu, restaurant details, and contact information with an elegant UI for a seamless browsing experience.",
     image:
@@ -463,6 +463,19 @@ export const projects = [
     category: "web app",
     github: "https://github.com/CVSCharan/restaurant-static-client",
     webapp: "https://restaurant-static-client.vercel.app/",
+  },
+  {
+    id: 14,
+    title: "SMILES Checker",
+    date: "",
+    description:
+      "SMILES Checker is a web-based molecular analysis tool built using React.js and RDKit.js. It allows users to enter SMILES (Simplified Molecular Input Line Entry System) strings to evaluate their chemical properties against key drug-likeness rules, including Lipinski, Veber, Ghose, and Egan.",
+    image:
+      "https://github.com/CVSCharan/portfolio-assets/blob/main/Smiles-info-app-img.png?raw=true",
+    tags: ["React Js", "JavaScript"],
+    category: "web app",
+    github: "https://github.com/CVSCharan/smiles-info",
+    webapp: "https://smiles-info.vercel.app/",
   },
   {
     id: 10,
